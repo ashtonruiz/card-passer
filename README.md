@@ -1,17 +1,4 @@
-# React Half Baked Card Passer Challenge
-
-## Demo
-
-[Link to Demo](https://alchemy-card-passer.netlify.app/)
-
-## Getting Started
-
-Use [this template](https://github.com/alchemycodelab/react-half-baked-card-passer) to get started.
-
-### Learning Objectives
-
-- Use context hooks to share state between components
-- Refactor an existing React application to use React Context
+![](/wireframe.png)
 
 ### Description
 
