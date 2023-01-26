@@ -2,7 +2,6 @@ import './App.css';
 // import initialCards from './cards-data';
 import Player from './components/Player';
 import CardList from './components/CardList';
-import { useState } from 'react';
 import ExecutePassButton from './components/ExecutePassButton';
 import { useContext } from 'react';
 import { GameContext } from './Context/GameContext.js';
