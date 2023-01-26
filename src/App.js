@@ -13,7 +13,7 @@ function App() {
   // const [playerThreeHand, setPlayerThreeHand] = useState([]);
   // const [from, setFrom] = useState('deck');
   // const [to, setTo] = useState(1);
-  const { selectedCard, to, passCard, setFrom, setTo, playerOneHand, playerTwoHand, playerThreeHand, from, deck } = useContext(GameContext);
+  const { selectedCard, passCard, playerOneHand, playerTwoHand, playerThreeHand, deck } = useContext(GameContext);
 
   // function findCardIndex(value, suit, cards) {
   //   return cards.findIndex((card) => card.value === value && card.suit === suit);
@@ -46,37 +46,36 @@ function App() {
       <section>
         {/* if the player names are numbers, that will make our life easier later because we can reuse numbers as arrays. Note that this will make our app brittle! */}
         <Player
-          to={to}
           player={1}
           hand={playerOneHand}
-          setFrom={setFrom}
+          // setFrom={setFrom}
           selectedCard={selectedCard}
-          setTo={setTo}
+          // setTo={setTo}
           // setSelectedCard={setSelectedCard}
         />
         <Player
-          to={to}
+          // to={to}
           player={2}
           hand={playerTwoHand}
-          setFrom={setFrom}
+          // setFrom={setFrom}
           selectedCard={selectedCard}
-          setTo={setTo}
+          // setTo={setTo}
           // setSelectedCard={setSelectedCard}
         />
         <Player
-          to={to}
+          // to={to}
           player={3}
           hand={playerThreeHand}
-          setFrom={setFrom}
+          // setFrom={setFrom}
           selectedCard={selectedCard}
-          setTo={setTo}
+          // setTo={setTo}
           // setSelectedCard={setSelectedCard}
         />
         <CardList
           cards={deck}
           selectedCard={selectedCard}
           // setSelectedCard={setSelectedCard}
-          setFrom={setFrom}
+          // setFrom={setFrom}
           player={'deck'}
         />
       </section>
@@ -84,9 +83,9 @@ function App() {
         {selectedCard && (
           <ExecutePassButton
             passCard={passCard}
-            setFrom={setFrom}
-            from={from}
-            to={to}
+            // setFrom={setFrom}
+            // from={from}
+            // to={to}
             selectedCard={selectedCard}
             // setSelectedCard={setSelectedCard}
           />
