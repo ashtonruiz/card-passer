@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react';
 import { useState } from 'react';
-import initialCards from './cards-data';
+import initialCards from '../cards-data';
 
 const GameContext = createContext();
 const GameProvider = ({ children }) => {
@@ -39,7 +39,7 @@ const GameProvider = ({ children }) => {
   }
 
   return (
-    <GameContext.Provider value={{ selectedCard, setSelectedCard, to, passCard }}>
+    <GameContext.Provider value={{ selectedCard, setSelectedCard, to, passCard, setFrom, setTo, playerOneHand, playerTwoHand, playerThreeHand, deck, setDeck, from, setPlayerOneHand, setPlayerTwoHand, setPlayerThreeHand }}>
       {children}
     </GameContext.Provider>
   );
