@@ -7,10 +7,7 @@ export default function CardList({ cards, player }) {
       {cards.map((card) => (
         <Card
           key={card.suit + card.value}
-          // setSelectedCard={setSelectedCard}
-          // selectedCard={selectedCard}
           player={player}
-          // setFrom={setFrom}
           card={card}
         />
       ))}

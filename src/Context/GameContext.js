@@ -20,7 +20,6 @@ const GameProvider = ({ children }) => {
     const playerHands = [playerOneHand, playerTwoHand, playerThreeHand];
     const playerHandSetFunctions = [setPlayerOneHand, setPlayerTwoHand, setPlayerThreeHand];
 
-    // arrays start at zero, but our players start at 1 :shrug:
     const toHand = playerHands[to - 1] || deck;
     const fromHand = playerHands[from - 1] || deck;
 
